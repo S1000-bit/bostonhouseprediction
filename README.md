@@ -1,12 +1,72 @@
-### Boston House price prediction
+# Housy - House Price Prediction App
 
-1. Have an account in Heraku for deployment purposes
-2. Create a new environment for the project
+Housy is a web application built using Flask for predicting house prices. The application uses a machine learning model trained with scikit-learn to make predictions based on user input.
 
-```
-conda create --name venv python==3.8 -y
-```
+## Table of Contents
 
-## Result
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running the Application](#running-the-application)
+- [Docker](#docker)
 
-<img width="1440" alt="Screenshot 2024-06-06 at 5 39 18 PM" src="https://github.com/S1000-bit/bostonhouseprediction/assets/98201700/d007639a-9c22-4835-8142-15c2721d3804">
+
+## Introduction
+
+Housy is designed to help users predict the price of a house based on various features. It leverages a pre-trained machine learning model to provide accurate predictions.
+
+## Features
+
+- User-friendly web interface for inputting house features
+- Predicts house prices using a machine learning model
+- Visualizations of data trends
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8.10
+- Docker (optional, for containerized deployment)
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-repository.git
+   cd your-repository
+2. Create virtual environment:
+   
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use env\Scripts\activate
+
+3. Install the required dependencies:
+   
+    ```bash
+   pip install -r requirements.txt
+
+## Usage
+
+To use the application, ensure you have all dependencies installed and your virtual environment activated.
+
+## Running the Application
+
+  You can run the application using Flask. Ensure you are in the project directory and the virtual environment is activated.
+  
+        export FLASK_APP=app.py
+        flask run
+
+## Docker
+
+1. To run the application using Docker, you need to have Docker installed on your machine.
+
+ Build the Docker image:
+  
+    docker build -t housy-app 
+
+2. Run the Docker container:
+
+       docker run -d -p 5000:5000 housy-app
+
