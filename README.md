@@ -34,8 +34,8 @@ Housy is designed to help users predict the price of a house based on various fe
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repository.git
-   cd your-repository
+   git clone https://github.com/S1000-bit/bostonhouseprediction.git
+   cd bostonhouseprediction
 2. Create virtual environment:
    
    ```bash
